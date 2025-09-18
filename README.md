@@ -1,0 +1,2 @@
+# pytest_jenkins_demo
+pytest用例集成到Jenkins执行
