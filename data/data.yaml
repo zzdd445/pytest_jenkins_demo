@@ -1,0 +1,39 @@
+## 对象格式
+#hero:
+#  name: 安琪拉
+#  word: 火焰是我最喜欢的玩具
+#  HP: 550.5
+#
+#
+##以上写法等同于如下写法
+##hero: {name: 安琪拉, word: ,HP: 550.5}
+#
+#
+##数组模式
+#heros_name:
+#  - 安琪拉
+#  - 黄忠
+#  - 瑶妹
+#  - 夏侯惇
+
+# 对象嵌套
+test_data:
+  pass_data1:
+    num1: 1
+    num2: 2
+    sum: 3
+
+  pass_data2:
+    num1: 2
+    num2: 4
+    sum: 6
+
+  erro_data1:
+    num1: 1
+    num2: 2
+    sum: 5
+
+  erro_data2:
+    num1: 3
+    num2: 2
+    sum: 4
