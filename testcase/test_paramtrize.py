@@ -34,6 +34,7 @@ class TestParamtrize():
     def test_c(self,case_name,num1,num2,sum):
         print(f"我是测试用例{case_name}")
         assert num1+num2 == sum
+        
 
 
 
