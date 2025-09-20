@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.idea/
+.vscode/
+
+# 测试报告 & 日志
+report/
+logs/
+*.log
+
+# 依赖虚拟环境（如建在项目内）
+venv/
+.env

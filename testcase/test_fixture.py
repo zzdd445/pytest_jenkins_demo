@@ -1,33 +1,33 @@
 import allure
 import pytest
-
-
+import logging
+log = logging.getLogger(__name__)
 # 固定写法setup_  module(一个py文件)，function（不在类里面的函数），class（类），method（类里面的方法）
 # def setup_module():
-#     print("模块前置")
+#     log.info("模块前置")
 #
 # def setup_function():
-#     print("方法前置")
+#     log.info("方法前置")
 #
 # def teardown_function():
-#     print("方法后置")
+#     log.info("方法后置")
 #
 # def teardown_module():
-#     print("模块后置")
+#     log.info("模块后置")
 
 
 #fixture默认范围是function
 @pytest.fixture(scope="class")
 def case_fixture(fixture_one):
-    print("开始")
+    log.info("开始")
 
     yield
 
-    print("结束")
+    log.info("结束")
 
 @pytest.fixture(scope="class")
 def fixture_one():
-    print(f"111111")
+    log.info(f"111111")
 
 def test_1(case_fixture):
     assert 1==1
@@ -46,7 +46,7 @@ class TestFixtureOne():
 
 
     def test_4(self):
-        print("22222")
+        log.info("22222")
 
 
 
